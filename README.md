@@ -30,12 +30,12 @@ A Python project that leverages the **Model Context Protocol (MCP)** to create a
 git clone https://github.com/cosmicishan/mcp_pypi.git
 cd mcp_pypi
 
-# Create and activate a virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+# Create and activate a virtual environment using uv
+uv venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate.bat or .venv\Scripts\Activate.ps1
 
-# Install dependencies
-pip install -e .
+# Install dependencies using uv
+uv sync
 ```
 
 ---
