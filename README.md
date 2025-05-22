@@ -98,4 +98,21 @@ In the chat interface:
 
 ## Example Interactions
 
-_(Include example queries and responses here, if desired)_
+### 🧠 Model Context Protocol Inspector
+
+The MCP Inspector is a developer tool for testing and debugging MCP servers like our PyPI package information server. 
+
+![MCP Inspector Screenshot](https://github.com/user-attachments/assets/d9386522-96b1-447f-9858-f770c694923c)
+
+---
+
+### 💬 Interactive Chat via `client.py`
+
+You can start the client to initiate a chat-based session with the AI model. The model can now fetch real-time PyPI data and respond to your queries intelligently.
+
+Below is an example screenshot of a live session using `client.py`, where the model answers questions about Python packages using up-to-date metadata:
+
+![Client Interaction Screenshot](https://github.com/user-attachments/assets/0eb2ed84-1fdb-4bee-aed2-5373727824f8)
+
+---
+
