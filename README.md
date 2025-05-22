@@ -1,28 +1,31 @@
-# mcp_pypi
+# MCP PyPI Insights
 
-MCP PyPI Insights
-A Python project that leverages the Model Context Protocol (MCP) to create a server for fetching and analyzing Python package information from PyPI. This tool enables AI agents to access up-to-date package metadata through a standardized interface.
+A Python project that leverages the **Model Context Protocol (MCP)** to create a server for fetching and analyzing Python package information from PyPI. This tool enables AI agents to access up-to-date package metadata through a standardized interface.
 
-Overview
-MCP PyPI Insights provides a seamless way to retrieve package information from the Python Package Index (PyPI) using the Model Context Protocol. The project consists of:
+---
 
-An MCP server that exposes PyPI package information as a tool
+## Overview
 
-A client implementation for interacting with the server
+**MCP PyPI Insights** provides a seamless way to retrieve package information from the Python Package Index (PyPI) using the Model Context Protocol. The project consists of:
 
-Integration with LLM providers like Groq
+- An MCP server that exposes PyPI package information as a tool  
+- A client implementation for interacting with the server  
+- Integration with LLM providers like **Groq**
 
-Features
-PyPI Package Information: Fetch metadata including version, dependencies, and release notes
+---
 
-Interactive Chat Interface: Communicate with AI models while providing access to PyPI data
+## Features
 
-Conversation Memory: Maintain context throughout interactions
+- **PyPI Package Information**: Fetch metadata including version, dependencies, and release notes  
+- **Interactive Chat Interface**: Communicate with AI models while providing access to PyPI data  
+- **Conversation Memory**: Maintain context throughout interactions  
+- **Easy Integration**: Works with any MCP-compatible client or agent
 
-Easy Integration: Works with any MCP-compatible client or agent
+---
 
-Installation
-bash
+## Installation
+
+```bash
 # Clone the repository
 git clone https://github.com/yourusername/mcp-pypi-insights.git
 cd mcp-pypi-insights
@@ -33,14 +36,21 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
 pip install -e .
-Configuration
-Create a .env file with your API keys:
+```
 
-text
+---
+
+## Configuration
+
+Create a `.env` file with your API keys:
+
+```env
 GROQ_API_KEY=your_groq_api_key_here
-Update the server.json file with the correct paths for your environment:
+```
 
-json
+Update the `server.json` file with the correct paths for your environment:
+
+```json
 {
   "mcpServers": {
     "pypi_server": {
@@ -56,23 +66,36 @@ json
     }
   }
 }
-Usage
-Starting the MCP Server
+```
+
+---
+
+## Usage
+
+### Starting the MCP Server
+
 The PyPI tool server can be started directly:
 
-bash
+```bash
 python pypi_tool.py
-Using the Client
+```
+
+### Using the Client
+
 Run the interactive chat client to communicate with an AI model that has access to PyPI package information:
 
-bash
+```bash
 python client.py
+```
+
 In the chat interface:
 
-Type your questions about Python packages
+- Type your questions about Python packages  
+- Type `clear` to reset conversation history  
+- Type `exit` or `quit` to end the session
 
-Type 'clear' to reset conversation history
+---
 
-Type 'exit' or 'quit' to end the session
+## Example Interactions
 
-Example Interactions
+_(Include example queries and responses here, if desired)_
