@@ -1,0 +1,13 @@
+{
+    "mcpServers": {
+      "pypi_server": {
+        "command": "uv",
+        "args": [ "--directory",
+        "/home/ishan/Projects/mcp_youtube/",
+        "run",
+        "--python",
+        ".venv/bin/python",
+        "pypi_tool.py"]
+      }
+    }
+  }
