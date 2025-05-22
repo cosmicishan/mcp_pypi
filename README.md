@@ -27,8 +27,8 @@ A Python project that leverages the **Model Context Protocol (MCP)** to create a
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/mcp-pypi-insights.git
-cd mcp-pypi-insights
+git clone https://github.com/cosmicishan/mcp_pypi.git
+cd mcp_pypi
 
 # Create and activate a virtual environment
 python -m venv .venv
